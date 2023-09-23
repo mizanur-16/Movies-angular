@@ -1,0 +1,92 @@
+<div class="grid-container">
+
+    <!-- Movie creation form -->
+    <div class="grid-x small-offset-1 form-wrapper">
+        <div class="cell text-center">
+            <h3 class="h3">Create a Movie Please!</h3>
+            <span class="instruction">Movie and Genre tables will automatically get populated when movies created. H2 (in-memory) database is used. So restart the spring application if the database needs a reset.</span>
+        </div>
+
+        <div class="cell small-6 text-center form-sec">
+            <div class="grid-x">
+                <div class="cell form">
+                    <form [formGroup]="movieForm">
+                        <div class="grid-x">
+            
+                            <!-- Title -->
+                            <div class="cell">
+                                <input type="text" formControlName="title" placeholder="Title">
+                            </div>
+                            
+                            <!-- Release Year -->
+                            <div class="cell">
+                                <input type="number" formControlName="releaseYear" placeholder="Release Year">
+                            </div>
+                            
+                            <!-- Description -->
+                            <div class="cell">
+                                <textarea formControlName="description" rows="3" placeholder="Description"></textarea>
+                            </div>
+            
+                            <!-- Genres -->
+                            <div class="cell genre-sec">
+                                <input type="text" id="genre-input" placeholder="Genres">
+                                <span>type comma (,) separated genre please</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+        <div class="cell small-3 movie-submit-sec">
+
+            <div class="btn-sec text-center">
+                <button class="button" [disabled]="movieForm.invalid" (click)="SubmitForm()"> Create Movie</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="grid-x grid-margin-x small-offset-1 movie-wrapper">
+        
+        <div class="cell small-5 movie-list">
+            <!-- Movie list -->
+            <h5>Movies:</h5>
+            <ul *ngIf="movieList.length; else noMovie">
+                <li class="movie" 
+                    *ngFor="let movie of movieList; let i = index"
+                    (click)="onGetMovieDetail(i + 1)">
+                    <span>{{i + 1}}.</span> {{movie?.title | titlecase}}</li>
+            </ul>
+            <ng-template #noMovie>
+                <span style="color: rgb(133, 133, 133);">No movie found!</span>
+            </ng-template>
+
+            <hr>
+
+            <!-- Genre list -->
+            <h5>Genres:</h5>
+            <ul *ngIf="genreList.length; else noGenre">
+                <li class="genre" *ngFor="let genre of genreList">{{genre}}</li>
+            </ul>
+            <ng-template #noGenre>
+                <span style="color: rgb(133, 133, 133);">No genre found!</span>
+            </ng-template>
+            
+        </div>
+
+        <div class="cell small-7 movie-detail">
+            <h5>Details:</h5>
+            <div class="grid-x" *ngIf="selectedMovie; else noData">
+                <app-movie-detail [movieDetail]="selectedMovie"></app-movie-detail>
+            </div>
+
+            <ng-template #noData>
+                <div class="cell">
+                    <span style="color: rgb(133, 133, 133);">Please select a Movie from the left for detail.</span>
+                </div>
+            </ng-template>
+        </div>
+    </div>
+</div>
