@@ -1,27 +1,36 @@
-# Movies
+# Movies (Angular)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.3.
+This project was generated with `Angular CLI version 16.2.3`.
 
-## Development server
+## Source Code
+Click here for angular [Source Code](https://github.com/mizanur-16/Movies-angular).
+
+All the source codes are availabe on the link above. You just `clone them to your local machine`, navigate to the source code, and then install the dependencies by running `npm install` in the terminal window.
+
+> Note: Hopefully, `Node.js`, `npm`, and `@Angular/cli` are already installed on your machine. To check that you have the `npm` client and `angular/cli` installed, run the following command respectively `npm -v`, and `ng version` in a terminal window.
+
+## Angular Development server  
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+> Note: You should not face any `CORS` issue, as I've already configured the Spring Boot application to avoid this issue.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+# Movie (Spring Boot)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+This project was generated with `Spring Boot version 3.1.4`.
 
-## Running unit tests
+## Source Code
+Click here for Spring Boot [Source Code](https://github.com/mizanur-16/Movies).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+All the source codes are availabe on the link above. You just `clone them to your local machine`, and then open the source code through an IDE, like [IntelliJ IDEA](https://www.jetbrains.com/idea/). And you know, `IntelliJ IDEA` is smart enough and it will manage all the dependencies for you to run the application.
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# API Documentation
+Please click here for the [API Documentation](https://github.com/mizanur-16/Movies/blob/main/README.md).
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Further Assistance
+
+I am availabe to provide you assistance if you find any issue serving the projects or testing the APIs.
