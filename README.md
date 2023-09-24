@@ -27,7 +27,7 @@ All the source codes are availabe on the link above. You just `clone them to you
 
 
 # API Documentation
-Please click here for the [API Documentation](https://github.com/mizanur-16/Movies/blob/main/README.md).
+Please click here for the [API Documentation](https://github.com/mizanur-16/Movies/blob/main/Movie_API_Doc.md).
 
 
 
