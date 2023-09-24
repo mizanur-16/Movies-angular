@@ -1,10 +1,10 @@
 <div class="grid-container">
     <div class="grid-x">
         <div class="cell">
-            <h5>Title: <strong>{{movieDetail.title| titlecase}}</strong></h5>
-            <p>Release year: <strong>{{movieDetail.releaseYear}}</strong></p>
-            <p>Description: <strong>{{movieDetail.description}}</strong></p>
-            <p>Genres: <strong>{{movieDetail.genres | json}}</strong></p>
+            <h5>Title: <strong>{{movieDetail?.title| titlecase}}</strong></h5>
+            <p>Release year: <strong>{{movieDetail?.releaseYear}}</strong></p>
+            <p>Description: <strong>{{movieDetail?.description}}</strong></p>
+            <p>Genres: <strong>{{movieDetail?.genres | json}}</strong></p>
         </div>
     </div>
 </div>

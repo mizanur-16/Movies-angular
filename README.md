@@ -5,7 +5,7 @@
 This project was generated with `Angular CLI version 16.2.3`.
 
 ### 1. Source Code
-Click here for angular [Source Code](https://github.com/mizanur-16/Movies-angular).
+Click here for [Angular Source Code](https://github.com/mizanur-16/Movies-angular).
 
 All the source codes are availabe on the link above. You just `clone` them to your local machine, navigate to the source code directory, and then install the dependencies by running `npm install` in the terminal window.
 
@@ -13,7 +13,7 @@ All the source codes are availabe on the link above. You just `clone` them to yo
 
 ### 2. Angular Development server  
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to [http://localhost:4200/](http://localhost:4200/). The application will automatically reload if you change any of the source files.
 
 > Note: You should not face any `CORS` issue, as I've already configured the Spring Boot application to avoid this issue.
 
@@ -37,4 +37,4 @@ Please click here for the [API Documentation](https://github.com/mizanur-16/Movi
 
 I am availabe to provide you assistance if you find any issue serving the projects or testing the APIs.
 
-***Thank you all.***
+***Thanking you all bhai...***
