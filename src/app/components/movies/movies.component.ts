@@ -25,8 +25,8 @@ export class MoviesComponent implements OnInit, AfterViewInit {
   constructor(
     private projectService: ProjectService,
     private formBuilder: FormBuilder) {
-
   }
+
 
   ngOnInit(): void {
     this.refreshMovieAndGenreList();
@@ -34,7 +34,7 @@ export class MoviesComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
 
-    // AUTO FILL THE FIELDS
+    // AUTO FILL THE FIELDS WHEN TOUCH THE 'title' PROPERTY
     this.movieForm.get("title")?.valueChanges.pipe(
       debounceTime(1000),
       distinctUntilChanged()
@@ -97,7 +97,6 @@ export class MoviesComponent implements OnInit, AfterViewInit {
   SubmitForm(): void {
     if (this.movieForm.valid) {
       this.populateFormWithGenres();
-      console.log(this.movieForm.value)
       
       this.projectService.postData(this.projectService.moviesURL, this.movieForm.value).subscribe({
         next: (res: any) => {
